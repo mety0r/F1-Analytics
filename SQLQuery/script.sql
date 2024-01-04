@@ -18,7 +18,7 @@ PRIMARY KEY(circuitID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/circuits.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\circuits.csv' 
 INTO TABLE circuits
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -34,7 +34,7 @@ url VARCHAR(1000),
 PRIMARY KEY(constructorID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/constructors.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\constructors.csv'
 INTO TABLE constructors
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -51,7 +51,7 @@ PRIMARY KEY(constructorResultsID),
 FOREIGN KEY(constructorID) REFERENCES constructors(constructorID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/constructorResults.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\constructorResults.csv'
 INTO TABLE constructorResults
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -70,7 +70,7 @@ PRIMARY KEY(constructorStandingsID),
 FOREIGN KEY(constructorID) REFERENCES constructors(constructorID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/constructorStandings.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\constructorStandings.csv'
 INTO TABLE constructorStandings
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -91,7 +91,7 @@ PRIMARY KEY(driverID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/drivers.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\drivers.csv'
 INTO TABLE drivers
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -112,7 +112,7 @@ PRIMARY KEY(driverStandingsID),
 UNIQUE KEY(raceID, driverID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/driverStandings.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\driverStandings.csv'
 INTO TABLE driverStandings
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -143,7 +143,7 @@ FOREIGN KEY(raceID, driverID) REFERENCES driverStandings(raceID, driverID)
 
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/lapTimes.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\lapTimes.csv'
 INTO TABLE lapTimes
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -164,7 +164,7 @@ FOREIGN KEY(raceID, driverID) REFERENCES driverStandings(raceID, driverID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/pitStops.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\pitStops.csv'
 INTO TABLE pitStops
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -187,7 +187,7 @@ UNIQUE KEY(raceID, driverID,constructorID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/qualifying.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\qualifying.csv'
 INTO TABLE qualifying
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -210,7 +210,7 @@ FOREIGN KEY(year) REFERENCES seasons(year)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/races.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\races.csv'
 INTO TABLE races
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -224,7 +224,7 @@ url VARCHAR(1000),
 PRIMARY KEY(year)
 );
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/seasons.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\seasons.csv'
 INTO TABLE seasons
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -239,7 +239,7 @@ PRIMARY KEY(statusID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/status.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\status.csv'
 INTO TABLE status
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
@@ -275,7 +275,7 @@ FOREIGN KEY(raceID, driverID) REFERENCES driverStandings(raceID, driverID)
 );
 
 
-LOAD DATA LOCAL INFILE '/Users/Kaul10/Desktop/f1/results.csv'
+LOAD DATA LOCAL INFILE 'C:\Users\skrei\Desktop\dbms proj\results.csv'
 INTO TABLE results
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
