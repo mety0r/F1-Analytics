@@ -12,7 +12,7 @@ This project utilizes a relational database management system (DBMS) to manage a
 https://github.com/mety0r/F1-Analytics.git
 ```
 
-## Database Setup:
+### Database Setup:
 
 - Ensure you have a MySQL database installed.
 - Run the provided SQL scripts to create and populate the tables.
