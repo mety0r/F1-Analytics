@@ -34,6 +34,6 @@ IGNORE 1 ROWS;
 - Import the SQL data into Power BI.
 - Use the pre-designed dashboard template (if available) to visualize the data.
  
-#### Snapshots
+## Snapshots
 <img src="Snapshots/ss1.jpg" width="100%">
 <img src="Snapshots/ss2.jpg" width="100%">
