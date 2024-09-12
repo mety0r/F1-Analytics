@@ -1,6 +1,3 @@
-<img src="Snapshots/ss1.jpg" width="100%">
-<img src="Snapshots/ss2.jpg" width="100%">
-
 # Formula 1 Data Analysis with DBMS and Power BI Dashboard
 ## Project Overview
 This project utilizes a relational database management system (DBMS) to manage and analyze Formula 1 racing data. The data is loaded into SQL tables from various CSV files and then analyzed using SQL queries. A Power BI dashboard is used to visualize the results, providing insights into various aspects of Formula 1 races, such as driver standings, lap times, and race results.
@@ -37,5 +34,6 @@ IGNORE 1 ROWS;
 - Import the SQL data into Power BI.
 - Use the pre-designed dashboard template (if available) to visualize the data.
  
-
-
+#### Snapshots
+<img src="Snapshots/ss1.jpg" width="100%">
+<img src="Snapshots/ss2.jpg" width="100%">
