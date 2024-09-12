@@ -1,3 +1,5 @@
+<img src="Snapshots/ss1.jpg" width="100%">
+
 # DBMS-proj
 
 ## F1 Database 
