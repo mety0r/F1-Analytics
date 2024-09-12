@@ -1,4 +1,4 @@
-<img src="Snapshots/ss1.jpg" width="100%">
+<img src="Snapshots/ss2.jpg" width="100%">
 
 # DBMS-proj
 
