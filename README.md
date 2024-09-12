@@ -32,6 +32,10 @@ FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
+##Power BI Setup:
+
+- Import the SQL data into Power BI.
+- Use the pre-designed dashboard template (if available) to visualize the data.
  
 
 
