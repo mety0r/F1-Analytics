@@ -22,6 +22,16 @@ https://github.com/mety0r/F1-Analytics.git
 USE formula1;
 -- Run the SQL commands to create tables and load data from CSV files.
 ```
+
+##Loading CSV Data
+- Modify the file paths in the LOAD DATA statements to match the location of the CSV files on your system.
+```bash
+   LOAD DATA LOCAL INFILE 'C:/path/to/circuits.csv'
+INTO TABLE circuits
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+```
  
 
 
